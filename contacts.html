@@ -1,0 +1,172 @@
+<html>
+<head><title>Eco-Screen- Contact Us</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<link rel="icon"; href="favicon.ico"; type="image/x-icon";>	
+<style>
+
+@media only screen and (max-width: 1024px)
+	{	header	{	margin-bottom: 0px;
+					padding: 0px;
+				}
+		body	{	margin: 0;
+					background-color: red;
+					padding: 0px;		
+				}
+		main	{ 	margin-left: 0;
+				}
+		nav		{	margin-left: 0px;
+					float: none;
+					width: auto;
+					padding: 2px;
+					position: relative;
+				}
+		nav lu	{	text-align: center;
+				}		
+		nav li	{	display: inline-block;
+					padding: 0.5em;
+				}
+		nav a	{	border-style: none;
+				}
+		h1		{	font-size 90%;
+				}
+		table	{	width: auto;
+					margin: 5px;
+					background-color: green;
+					border: 2px solid blue;
+				}
+		footer
+				{	width: auto;
+					margin-left: 0px;
+					text-align: center;
+				}
+		caption	
+				{	font-size:18pt;
+					color: black;
+					font-weight: bold
+				}
+		th		{	font-family: verdana, sans-serif;
+				}
+		tr:nth-of-type(even) 
+			{	background-color: #90ee90;
+			}
+		tr:nth-of-type(odd) 
+			{	background-color: #ffb6c1;
+			}	
+		tr:first-of-type
+			{	background-color: yellow;
+			}
+						
+	}
+	
+@media only screen and (max-width: 768px)
+	{	body	{	background-color: green;
+				}
+		main	{ 	width: auto;
+				}
+		nav		{	float: none;
+					width: 0;
+					padding: 0px;
+					height: auto;
+				}
+		nav lu	{	text-align: center;
+				}		
+		nav li	{	display: block;
+					padding: 0em;
+				}
+		nav a	{	border-style: none;
+				}
+		h1		{	font-size 100%;
+				}
+		table	{	width: auto;
+					margin: 5px;
+					background-color: grey;
+					border: 2px solid white;
+				}		
+		td		{	border-style: none;
+					font-family: Arial, sans-serif;
+				}
+		caption	
+				{	font-size:18pt;
+					color: purple;
+				}				
+		tr:nth-of-type(even) 
+			{	background-color: white;
+			}
+		tr:nth-of-type(odd) 
+			{	background-color: grey;
+			}	
+		tr:first-of-type
+			{	background-color: gold;
+			}				
+	}
+
+</style>
+
+
+	<script>//#2
+		document.write("Page last modified on " + document.lastModified + ".<br>");
+	</script>
+
+	<script>//#5
+		function randomQuotes()
+			{	var quotes= new Array() 
+					quotes[0]='1. "Research shows that there is only half as much variation in student achievement between schools as there is among classrooms in the same school. If you want your child to get the best education possible, it is actually more important to get him assigned to a great teacher than to a great school." Bill Gates';
+					quotes[1]='2. "There is no charm equal to tenderness of heart." Jane Austen.';
+					quotes[2]='3. "Learning never exhausts the mind." Leonardo da Vinci.'; 
+					quotes[3]='4. "An investment in knowlage pays the best interest" Benjamin Franklin.' ;
+					quotes[4]='5. "There is nothing permanent except change." Heraclitus';
+				
+			var randomQuote = quotes[Math.floor(Math.random() * 5)];
+
+			var setQuote = document.getElementById("randQuote");
+			setQuote.innerHTML = randomQuote;
+					
+			}
+	
+	</script>	
+
+</head>
+
+<body onload="randomQuotes();">
+	<header>
+		<h1>Eco-Screen Sunscreen</h1>
+		<h3 id="randQuote"> h3</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home		</a></li>
+			<li><a href="links.html">Links		</a></li>
+			<li><a href="images.html">Images	</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+			<li><a href="join.html">Join		</a></li>
+		</ul>
+	</nav>
+	<main>
+		<table>
+			<caption>Eco-Screen Contacts</caption>
+			<tr><th>Name</th>
+				<th>E-mail</th>
+				<th>Phone</th>
+			<tr>
+			<tr><td>Bill Smith</td>
+				<td><a href="mailto:billsmith@ecoscreen.com">Bill Smith</a></td>
+				<td>254-772-7481</td>
+			</tr>
+			<tr><td>Jon Johnson</td>
+				<td><a href="mailto:jonjohnson@ecoscreen.com">Jon Johnson</a></td>
+				<td>254-772-7482</td>
+			<tr><td>Sue Jones</td>
+				<td><a href="mailto:suejones@ecoscreen.com">Sue jones</a></td>
+				<td>254-772-7483</td>
+			</tr>
+		</table>
+	</main>
+	<footer>	
+		E-mail: <a href="mailto:jonathan.rierson@go.tarleton.edu"><b>jonathan.rierson@go.tarleton.edu</b></a>
+		
+		<small><i>Copyright &copy; 2019  Eco-Screen LLC</i></small>
+	</footer>	
+	
+
+</body>
+</html>

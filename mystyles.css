@@ -1,0 +1,80 @@
+header
+     {	margin-bottom: 30px;
+		padding: 10px;
+	 }
+	 
+body 
+	{	color: 0000FF;
+		background-color: #A9A9A9;
+		border: 10px double #000000;
+		padding: 0.90;
+		border-radius: 10px 10px 5px 5px;
+
+		
+		background-image: url(seaturtle.jpg);
+		background-position: top right;
+		background-repeat: repeat-y;
+		background-size: 10% 10%;
+	}
+
+h1  {	color: 0000FF;
+		border: 3px ridge green;
+		
+
+		text-shadow: 3px 3px 5px #FF8C00;	
+		border-radius: 10px;
+		box-shadow: inset 2px 2px 12px 10px #FFA500;
+	}
+
+h2 	{	background-image: linear-gradient(to bottom, #FFFF00, #C542F5);
+		background-repeat: no-repeat;
+	}
+
+h3 	{	background-image: radial-gradient(#FFFF00, #C542F5);
+		background-repeat: no-repeat;
+	}
+	
+nav	{	float: left;
+		width: 100px;
+		padding 10px;
+		position: fixed;
+	}	
+
+main{	margin-left: 110px;
+		padding 10px;
+	}	
+
+ ul {	list-style-image: url(navLogo.gif)
+	}
+
+a:hover
+	{	text-decoration: none;
+		font-weight: bold;
+		color: #00FF00;
+		background-color: #000000;
+	}
+	
+footer
+	{	margin-left: 110px;
+		text-align: center;
+	}
+/*
+table
+	{ 	margin: auto;
+	}
+*/
+caption	
+	{	font-size:18pt;
+		color:#00008b;//darkblue
+	}
+tr:nth-of-type(even) 
+	{	background-color: #ffb6c1;//lightpink
+	}
+tr:nth-of-type(odd) 
+	{	background-color: #90ee90;//lightgreen
+	}	
+tr:first-of-type
+	{	background-color: #FFFFE0;//lightyellow
+	}
+
+	

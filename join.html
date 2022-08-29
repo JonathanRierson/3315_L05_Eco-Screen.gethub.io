@@ -1,0 +1,77 @@
+<html>
+<head><title>Eco-Screen- Contacts</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<link rel="icon"; href="favicon.ico"; type="image/x-icon";>	
+	
+	<script>//#2
+		document.write("Page last modified on " + document.lastModified + ".");
+	</script>
+	<script>//#4
+		function getSpecialEvent()
+			{	var todayIs = new Date();
+				var bDayIs = new Date ("December 15, 2019");
+				var daysSubtracted = bDayIs - todayIs;
+				var daysUntil= Math.ceil(daysSubtracted/(1000*60*60*24));
+								
+				var specialEventInfo = "The Big Christmas Sale Blowout begins in " + daysUntil + " days!";
+
+				var setDays = document.getElementById("specialEvent");
+				setDays.innerHTML = specialEventInfo; 
+			}
+	</script>
+	
+</head>
+<body onload="getSpecialEvent();">
+	<header>
+		<h1>Eco-Screen Sunscreen</h1>
+		<h3 id="specialEvent">h3</h3>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home		</a></li>
+			<li><a href="links.html">Links		</a></li>
+			<li><a href="images.html">Images	</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+			<li><a href="join.html">Join		</a></li>
+		</ul>
+	</nav>
+	<main>
+		<form method="post" action="mailto:jonathan.rierson@go.tarleton.edu">
+			Full Name: <input type="text" name="FullName" id="FullName"><br>
+			
+			<form method="get">
+			<lable for="myEmail">E-mail: </lable>
+			<input type="email" name="myEmail" id="myEmail" ><br><br><br>
+				
+	
+	
+			<lable for="mobile">Mobile Number: </lable>
+				<input type="tel" name="mobile" id="mobile"
+						required="required" placeholder="Mobile Number"><br>
+			
+			Select your account type:<br>
+			<input type="radio" name="accounttype" id="personalAcct" value="personal"> Personal<br>
+			<input type="radio" name="accounttype" id="businessAcct" value="business"> Business<br>
+			
+			<input type="checkbox" name="discounts" id="discounts" value="yes"> Check for e-mail promotions<br><br>
+	
+			<lable for="comments">Please enter Questions or Comments:</lable><br>
+			<textarea name="comments" id="comments" cols="50" rows="3">Enter Questions or Comments</textarea>
+			
+			<br><br>
+			
+			
+			<lable for="dob">Date of Birth</lable>
+			<input type="date" name="dob" id="dob" required="required" placeholder="Mobile Number"><br><br>
+			
+			<input type="submit">
+			<input type="reset">
+		</form>
+	</main>
+	<footer>	
+		E-mail: <a href="mailto:jonathan.rierson@go.tarleton.edu"><b>jonathan.rierson@go.tarleton.edu</b></a>
+		
+		<small><i>Copyright &copy; 2019  Eco-Screen LLC</i></small>
+	</footer>	
+</body>
+</html>

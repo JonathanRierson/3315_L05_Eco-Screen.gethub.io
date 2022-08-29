@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>Eco-Screen - Links</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<link rel="icon"; href="favicon.ico"; type="image/x-icon";>	
+</head>
+
+	<script>//#2
+		document.write("Page last modified on " + document.lastModified + ".");
+	</script>
+
+	<script type="text/javascript">//#6  A
+		var slideimages = new Array();
+			slideimages[0] = new Image(); 
+			slideimages[0].src = "Logo.png"; 
+			slideimages[1] = new Image();
+			slideimages[1].src = "seaturtle.jpg";
+			slideimages[2] = new Image();
+			slideimages[2].src = "sunscreen.png"; 
+
+	</script>
+
+
+<body>
+	<header>
+			<h1>Eco-Screen Sunscreen</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html"; 	style="font-style: italic; text-decoration: none;">Home		</a></li>
+			<li><a href="links.html"; 	style="font-style: italic; text-decoration: none;">Links	</a></li>
+			<li><a href="images.html"; 	style="font-style: italic; text-decoration: none;">Images	</a></li>
+			<li><a href="contacts.html"; style="font-style: italic; text-decoration: none;">Contacts</a></li>
+			<li><a href="join.html"; style="font-style: italic; text-decoration: none;">Join	</a></li>
+		</ul>
+	</nav>
+	<main>
+		<br>
+	<img src="beachwave.jpg" id="slide" width="100" height="56" />
+	
+	<script>  //#6  B
+		var index=0;
+		function slideit()
+			{	if (!document.images)
+					{	return; 
+						//alert("if 1 - index = " + index);					
+					}
+					
+				document.getElementById("slide").src = slideimages[index].src;	
+				
+				if (index<2)	
+					{	index++;
+						//alert("if 2 - index = " + index);
+					}
+				else
+					{	index=0;
+						//alert("if 3 - index = " + index);
+					}
+				setTimeout("slideit()",1000);
+				//alert("F end");				
+			}
+		
+		slideit();
+	</script>
+	
+		<br>
+		<h2>Related websites:</h2>
+		<ol>
+			<li><a href="https://www.nationalgeographic.com/travel/features/sunscreen-destroying-coral-reefs-alternatives-travel-spd/">Sunscreen Destroying Coral Reefs
+				</a>
+			</li>
+			<li><a href="https://www.vox.com/2018/7/2/17525496/hawaii-banning-sunscreen">Hawaii Banning Sunscreens
+				</a>
+			</li>
+			<li><a href="https://travel.usnews.com/rankings/best-beaches-in-the-usa/">Best Beaches in the U.S.
+				</a>
+			</li>
+			<li><a href="https://www.budget.com/en/home">Budget Car rental
+				</a>
+			</li>
+			<li><a href="https://www.southwest.com/">Southwest Airlines
+				</a>
+			</li>
+		</ol>
+	</main>
+	<footer>	
+		E-mail: <a href="mailto:jonathan.rierson@go.tarleton.edu"><b>jonathan.rierson@go.tarleton.edu</b></a>
+		
+		<small><i>Copyright &copy; 2019  Eco-Screen LLC</i></small>
+	</footer>
+</body>
+</html>
